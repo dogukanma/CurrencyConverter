@@ -1,4 +1,4 @@
-const Country_List = {
+const COUNTRY_LIST = {
   "AED": "AE",
   "AFN": "AF",
   "XCD": "AG",
@@ -151,7 +151,6 @@ const Country_List = {
   "USD": "US",
   "UYU": "UY",
   "UZS": "UZ",
-  "VEF": "VE",
   "VND": "VN",
   "VUV": "VU",
   "YER": "YE",
@@ -160,4 +159,4 @@ const Country_List = {
   "ZWD": "ZW"
 }
 
-export {Country_List};
+export {COUNTRY_LIST};

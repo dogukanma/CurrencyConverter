@@ -20,7 +20,7 @@
       <form>
         <div class="amount">
           <p>Amount</p>
-          <input type="number" value="1" />
+          <input type="number" min="0" max="1000000000000" step=".01" value="1" />
         </div>
         <div class="convert-box">
           <div class="fromCurrency">
@@ -38,7 +38,7 @@
           <div class="toCurrency">
             <p>To</p>
             <div class="select-input">
-              <img src="https://flagcdn.com/48x36/gb.png" alt="United States" />
+              <img src="https://flagcdn.com/48x36/tr.png" alt="Turkey" />
               <select>
                 
               </select>
@@ -51,7 +51,12 @@
       </form>
     </div>
 
-    <script type="module" src="./countries.js"></script>
-    <script type="module" src="./app.js"></script>
+    <a href="https://github.com/dogukanma">
+      <i class="fa-brands fa-github"></i>
+      <h5 id="author">dogukanma</h5>
+    </a>
+
+    <script type="module" src="countries.js"></script>
+    <script type="module" src="app.js"></script>
   </body>
 </html>
