@@ -40,12 +40,9 @@ async function getExchangeRate() {
     const result = await response.json();
     const exchangeRate = result.conversion_rates[toCur.value];
     const totalExRate = (amountVal * exchangeRate).toFixed(2);
-    // console.log((exchangeRate * amountVal) / result.conversion_rates[fromCur.value]);
     loadingMsg.style.display = "none";
     excResult.style.display = "block";
     excResult.innerText = `${amountVal} ${fromCur.value} = ${totalExRate} ${toCur.value}`;
-
-    // console.log(`${fromCur}`)
   } catch (error) {
     loadingMsg.style.display = none;
     excResult.style.display = "block";
@@ -69,14 +66,3 @@ convertBtn.addEventListener("click", (e) => {
   e.preventDefault();
   getExchangeRate();
 });
-
-// exrate = 29
-// 5
-// 145
-
-// amount       = 10
-// A value      = 50    2/100 = 0.02
-// B value      = 2.5   4/10  = 0.40
-// exrate       = 25    10 * 0.02 = 0.20 = 0.5 B
-
-//  15 * 3.75z
